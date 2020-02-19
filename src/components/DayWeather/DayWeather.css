@@ -1,0 +1,169 @@
+.day-weather {
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.day-weather__city {
+    margin: 0 0 10px;
+    width: 100%;
+
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.day-weather__date {
+    margin: 0;
+    width: 100%;
+
+    font-size: 1.2rem;
+}
+
+.day-weather__info {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.day-weather__temperature {
+    position: relative;
+    display: flex;
+}
+
+.day-weather__value {
+    margin: 0;
+    padding-right: 30px;
+    width: 100%;
+
+    font-size: 13rem;
+    line-height: 18rem;
+    font-weight: 700;
+}
+
+.day-weather__degree {
+    position: relative;
+    margin-left: 1rem;
+    top: -2.5rem;
+    font-size: 4.5rem;
+}
+
+.day-weather__icon {
+    position: absolute;
+    top: 0;
+    right: -30%;
+
+    width: 160px;
+    height: 160px;
+
+    z-index: -1;
+}
+
+.day-weather__description {
+    margin: 0 0 3.5rem 0;
+
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.day-weather__summary {
+    margin: 0;
+}
+
+.day-weather__apparent {
+    margin: 0;
+}
+
+.day-weather__wind {
+    margin: 0;
+}
+
+.day-weather__humidity {
+    margin: 0;
+}
+
+
+
+@media (max-width: 700px) {
+    .day-weather__value {
+        font-size: 10rem;
+        line-height: 16rem;
+    }
+
+    .day-weather__degree {
+        margin-left: 1rem;
+        top: -5.5rem;
+        font-size: 4rem;
+    }
+
+    .day-weather__icon {
+        top: -20px;
+        right: -40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .day-weather__value {
+        font-size: 8rem;
+        line-height: 14rem;
+    }
+
+    .day-weather__degree {
+        margin-left: 1rem;
+        top: -4.5rem;
+        font-size: 3.5rem;
+    }
+
+    .day-weather__icon {
+        width: 128px;
+        height: 128px;
+    }
+
+    .day-weather__description {
+        margin: 0 0 3.3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .day-weather__info { 
+        display: block;
+    }
+
+    .day-weather__temperature {
+        display: flex;
+        justify-content: center;
+    }
+
+    .day-weather__value {
+        padding: 0;
+        width: auto;
+    }
+
+    .day-weather__icon {
+        position: sticky;
+    }
+
+    .day-weather__description {
+        margin: 0 0 40px 0;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .day-weather__value {
+        font-size: 7rem;
+        line-height: 12rem;
+    }
+
+    .day-weather__degree {
+        margin-left: 1rem;
+        top: -4rem;
+        font-size: 3rem;
+    }
+}

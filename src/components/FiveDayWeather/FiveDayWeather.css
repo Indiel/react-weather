@@ -1,0 +1,32 @@
+.five-day {
+    margin-bottom: 40px;
+    width: 100%;
+
+    font-size: 1rem;
+}
+
+.five-day__list {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 768px) {
+    .five-day__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .five-day__list {
+        display: block;
+    }
+}
