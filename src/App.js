@@ -28,7 +28,7 @@ class App extends React.Component {
 
     this.setState({
       city: dataDay.name,
-      temp: dataDay.main.temp,
+      temp: Math.round(dataDay.main.temp),
       icon: dataDay.weather[0].icon,
       summary: dataDay.weather[0].description,
       apparent: dataDay.main.feels_like,
@@ -46,7 +46,6 @@ class App extends React.Component {
       days: daytimeTemperatures
     });
   }
-  
   
   render() {
     return (
